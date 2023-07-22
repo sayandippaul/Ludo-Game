@@ -1,0 +1,256 @@
+
+    //  tname=<?php echo json_encode($tname); ?>
+    //  tpost=<?php echo json_encode($tpost); ?>
+
+
+
+
+    <?php
+// session_start();
+
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname="ludo";
+// $body= $_POST['body'];
+// $grpid = $_POST['grpid'];
+// $seen = $_POST['seen'];
+// $fromid =$_SESSION["id"];
+
+// Create connection
+$conn = new mysqli($servername, $username, $password, $dbname);
+// Check connection
+if ($conn->connect_error) {
+    die("Connection failed:". $conn->connect_error);
+}
+
+$sql = "SELECT *  FROM position";
+// $sql = "UPDATE  grpchatseen SET seen=1    where toid='$fromid' AND grpid='$grpid'";
+// $sql = "UPDATE  messages SET seento=1      where  grpid='$grpid' AND ";
+
+
+
+
+
+$result = $conn->query($sql);
+
+// if ($result->num_rows > 0) {
+//     // output data of each row
+//     while($row = $result->fetch_assoc()) {
+//         echo "id: " . $row["id"]. " - Name: " . $row["username"]. " ". "<br>";
+//     }
+// } else {
+//     echo "0 results";
+// }
+$tname = array();
+$tpost= array();
+
+        // $fromid =$_SESSION['id'];
+        // $result=getmembers($n);
+        $i=0;
+        if ($result->num_rows > 0) {
+            while($row = $result->fetch_assoc()) {
+
+                $tname[$i]=$row["name"];
+                $tpost[$i]=$row["position"];
+                $i++;
+
+                    }
+        };
+        
+
+
+$conn->close();
+return $result;
+
+?>
+
+
+
+       if( posti[0]!='r' && posti[0]!='b' && posti[0]!='g'&& posti[0]!='y'&& pathobj[posti].v>1){
+           // for(var j=0;j<)
+           for(var i=0;i<pathobj[posti].v;i++){
+               creatediv=creatediv+" 1fr ";
+               pathobj[posti].arg[i]=posti1;
+
+           }
+           var cr='<div style="display:grid;grid-template-columns:'+creatediv+'">';
+           for(var i=0;i<pathobj[posti].v;i++){
+               temp=temp+'<div   onclick="ghuti(`'+pathobj[posti].arg[i]+'`)" style="margin: auto; height: 50%;width:50%;background-image: url('+pathobj[posti].arg[i]+'.jpeg);background-size: cover;border: 5px solid black;"></div>';
+           }
+           document.getElementById(posti).innerHTML=cr+temp;
+
+       }
+   
+       else{
+
+                   var div='<div   onclick="ghuti(`'+t +'`,'+ `'`+posti +`'`+')" style="margin: auto; height: 50%;width:50%;background-image: url('+posti1+'.jpeg);background-size: cover;border: 5px solid black;"></div>';
+                    document.getElementById(posti).innerHTML=div;
+       }
+   
+           if(posti[0]!='r' && posti[0]!='b' && posti[0]!='g'&& posti[0]!='y'){
+
+               pathobj[posti].v=1;
+               pathobj[posti].t=posti1;
+               pathobj[posti].arg[0]=posti1;
+
+
+           }
+
+       
+
+INSERT INTO `position` (`id`, `name`, `position`) VALUES (1, 'r1', 'r1'), (2, 'r2', 'r2'), (3, 'r3', 'r3'), (4, 'r4', 'r4'), (5, 'g1', 'g1'), (6, 'g2', 'g2'), (7, 'g3', 'g3'), (8, 'g4', 'g4'), (9, 'b1', 'b1'), (10, 'b2', 'b2'), (11, 'b3', 'b3'), (12, 'b4', 'b4'), (13, 'y1', 'y1'), (14, 'y2', 'y2'), (15, 'y3', 'y3'), (16, 'y4', 'y4');
+
+INSERT INTO `position` (`id`, `name`, `position`) VALUES (NULL, 'r1', 'r1'), (NULL, 'r2', 'r2'), (NULL, 'r3', 'r3'), (NULL, 'r4', 'r4'), (NULL, 'g1', 'g1'), (NULL, 'g2', 'g2'), (NULL, 'g3', 'g3'), (NULL, 'g4', 'g4'), (NULL, 'b1', 'b1'), (NULL, 'b2', 'b2'), (NULL, 'b3', 'b3'), (NULL, 'b4', 'b4'), (NULL, 'y1', 'y1'), (NULL, 'y2', 'y2'), (NULL, 'y3', 'y3'), (NULL, 'y4', 'y4');
+
+var arrpos={};
+    for(var i=1;i<=4;i++){
+        arrpos[i] = {
+            na:0,
+            po:0
+          };
+        }
+    
+    function gbshow1(id){
+        // alert("k");
+        if (id==1){
+
+        
+        
+        // if(j==5){
+            // alert("hi");
+            sala2();
+            gbshow2(id);
+        // }
+        console.log(arrpos);
+        // gbshow2();
+        // arrpos=arrpos.toString;
+        console.log();
+
+        console.log(arrname);
+
+    } 
+    // else if (id==2){
+
+        
+    //     for(var i=5;i<=8;i++){
+    //         $.ajax({
+                
+    //             type: "POST",
+    //             url: "posfind.php",
+    //             data: {ghuti:i},
+                
+    //             success: function (result, status, xhr){
+    //                 // $("#showproblem1").html(result);
+    //                 // cleardiv();
+    //                 // setpos();
+    //                 result=result.slice(0,-2);
+    //                 arrpos.push(result);
+                    
+    //                 }
+                    
+    //         });
+           
+    //     }
+    //     console.log(arrpos);
+    // }
+    // else if (id==3){
+
+        
+    //     for(var i=9;i<=12;i++){
+    //         $.ajax({
+                
+    //             type: "POST",
+    //             url: "posfind.php",
+    //             data: {ghuti:i},
+                
+    //             success: function (result, status, xhr){
+    //                 // $("#showproblem1").html(result);
+    //                 // cleardiv();
+    //                 // setpos();
+    //                 result=result.slice(0,-2);
+    //                 arrpos.push(result);
+                    
+    //                 }
+                    
+    //         });
+           
+    //     }
+    //     console.log(arrpos);
+    // }
+    // else if (id==4){
+
+        
+    //     for(var i=13;i<=16;i++){
+    //         $.ajax({
+                
+    //             type: "POST",
+    //             url: "posfind.php",
+    //             data: {ghuti:i},
+                
+    //             success: function (result, status, xhr){
+    //                 // $("#showproblem1").html(result);
+    //                 // cleardiv();
+    //                 // setpos();
+    //                 result=result.slice(0,-2);
+    //                 arrpos.push(result);
+                    
+    //                 }
+                    
+    //         });
+           
+    //     }
+    //     console.log(arrpos);
+    }
+    // }
+    gbshow1(1);
+    function gbshow2(sid){
+        // console.log(arrpos[1]);
+        // arrpos1.push(arrpos);
+        // arrpos1 = [...arrpos];
+        // var sa=JSON.stringify(arrpos[0]);
+        // console.log(sa[0]);
+        alert(arrpos[1].na);
+        // for(i=1;i<5;i++){
+        //     var sa='k'+arrpos[i].na;
+        //     var sa1=arrpos[i].po;
+        //     if (sa1!='h'){
+        //         document.getElementById(sa).disabled = false;
+        //         document.getElementById(sa).style.boxShadow = "10px 20px 30px blue";;
+
+
+        //     }
+        // }
+    }
+    function sala2(){
+        for(var j=1;j<=4;j++){
+            sala(j);
+            
+         }
+         
+    }
+    function sala(i){
+        $.ajax({
+                
+            type: "POST",
+            url: "posfind.php",
+            data: {ghuti:i},
+            
+            success: function (result, status, xhr){
+                // $("#showproblem1").html(result);
+                // cleardiv();
+                // setpos();
+                 last2 = result.slice(-2);
+                result=result.slice(0,-2);
+                // arrpos.push(result);
+                arrpos[i].po=result;
+                arrpos[i].na=last2;
+
+                // arrname.push(last2);
+
+                // gbshow2();
+                }
+                
+        });
+
+    }

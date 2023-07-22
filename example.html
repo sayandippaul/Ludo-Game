@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+</head>
+<body>
+    <!-- <div >
+    <button  onclick="s()">hello</button></div>
+    <div > -->
+        <div id='id' onclick="p()" style="height: 12px;width: 12px;">hello</div>
+        <div id="show"></div>
+        <div class="show1"></div>
+    <audio src="music1.mp3" autoplay="autoplay" loop="loop">hi</audio>
+    <!-- <button onclick="s()">hello</button></div> -->
+</body>
+</html>
+<script>
+    
+    // function s(){
+    //     console.log("kjdk");
+        // document.getElementById('id').disabled = true;
+        // $("#id").prop('disabled',true);
+    function p(){
+        // console.log("kjdkdhbjmnskw");/
+
+        var no=  generateRandom(1,7);
+        document.getElementById('show').innerHTML=no;
+        document.getElementsByClassName("show1").innerHTML=no;
+
+    }
+    function generateRandom(min,max) {
+
+// find diff
+let difference = max - min;
+
+// generate random number 
+let rand = Math.random();
+
+// multiply with difference 
+rand = Math.floor( rand * difference);
+
+// add with min value 
+rand = rand + min;
+
+return rand;
+}
+</script>

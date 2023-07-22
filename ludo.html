@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table{
+            border: 2px solid black;
+        }
+        #home {
+width:30%;
+height:20%;
+background-color: red;
+}
+
+        td,
+th {
+    border: 1px solid black;
+    padding: 10px;
+    height: 30px;
+    width:0.3%;
+    table-layout: fixed;
+    border-collapse: collapse;
+
+
+}
+table.fixed {
+                table-layout: fixed;
+            }
+            table.fixed td {
+                overflow: hidden;
+            }
+
+td {
+    /* position: absolute; */
+    /* position: relative; */
+    text-align: center;
+    font-weight: bolder;
+    font-size:20px ;
+    /* margin-top: -100px; */
+   }
+
+tr:nth-child(even) {
+    background-color: #eee;
+}
+
+th[scope="col"] {
+    background-color: #696969;
+    color: #fff;
+}
+
+th[scope="row"] {
+    background-color: #d7d9f2;
+}
+
+caption {
+    padding: 10px;
+    caption-side: bottom;
+}
+
+table {
+    border-collapse: collapse;
+    border: 2px solid rgb(200, 200, 200);
+    letter-spacing: 1px;
+    font-family: sans-serif;
+    font-size: .8rem;
+}
+.homeuser td{
+height: 140px;
+width:140px
+}
+
+.homeuser1 td{
+/* height: 60px; */
+width:140px
+}
+
+
+    </style>
+</head>
+<body>
+   <div id="body"  style="display:grid;grid-template-columns: 5fr 2fr 5fr;height: 100vh;">
+    <div id="left">
+        <div style="display: grid;grid-template-columns: 5fr 1fr; height: 80px;" class="user">
+           <div id="username">
+            <input type="text" id="chat">
+            <button>send</button>
+            <br>
+            <button>leave</button>
+            <button>resque</button>
+            <button>hello</button>
+            <button>jaiho</button>
+            <input type="text" id="name" placeholder="your name shows here">
+           </div>
+           <div id="userpicture">
+               <img src="" alt="hello">
+           </div>
+        </div>
+        <table class="homeuser">
+            <tr>
+                <td id="g1"  style="background-color: rgb(54, 150, 54);"></td>
+                <td id="g2"  style="background-color: rgb(54, 150, 54);"></td>
+            
+            </tr>
+            <tr >
+                <td id="g3"  style="background-color: rgb(54, 150, 54);"></td>
+                <td id="g4"  style="background-color: rgb(54, 150, 54);"></td>
+    
+            </tr>
+            
+        </table >
+         <table class="fixed"  style=" margin: auto;">
+        <!-- <caption>Alien football stars</caption> -->
+        <tr>
+            <td id="14">14</td>
+            <td id="15" style="background-color: rgb(54, 150, 54);">15</td>
+            <td id="16">16</td>
+            <td id="17">17</td>
+            <td id="18">18</td>
+            <td id="19">19</td>
+        </tr>
+        <tr>
+            <td id="13">13</td>
+            <td  style="background-color: rgb(54, 150, 54);"></td>
+            <td  style="background-color: rgb(54, 150, 54);"></td>
+            <td  style="background-color: rgb(54, 150, 54);"></td>
+            <td  style="background-color: rgb(54, 150, 54);"></td>
+            <td  style="background-color: rgb(54, 150, 54);"></td>
+        </tr>
+        
+        <tr>
+            <!-- <th scope="row"></th> -->
+            <!-- <td></td> -->
+            
+            <td id="12">12</td>
+            <td id="11">11</td>
+            <td id="10" style="font-size:25px;">*</td>
+            <td id="9">09</td>
+            <td id="8">08</td>
+            <td id="7">07</td>
+        </tr>
+        
+    </table>
+    <table id="p1" class="homeuser">
+        <tr>
+            <td id="r1" style="background-color: red;">
+            <div id="homered" style="margin: auto; height: 50px;width:40px;background-image: url('red1.jpeg');background-size: cover;border: 5px solid black;"></div></td>
+            <td id="r2" style="background-color: red;">
+            <div id="homered" style="margin: auto; height: 50px;width:40px;background-image: url('red2.jpeg');background-size: cover;border: 5px solid black;"></div></td>
+        
+        </tr>
+        <tr >
+            <td id="r3" style="background-color: red;">
+            <div id="homered" style="margin: auto; height: 50px;width:40px;background-image: url('red3.jpeg');background-size: cover;border: 5px solid black;"></div></td>
+            <td id="r4" style="background-color: red;">
+            <div id="homered" style="margin: auto; height: 50px;width:40px;background-image: url('red4.jpeg');background-size: cover;border: 5px solid black;"></div></td>
+
+        </tr>
+        
+    </table>
+    <div style="display: grid;grid-template-columns: 5fr 1fr; height: 80px;" class="user">
+        <div id="username">
+         <input type="text" id="name" placeholder="your name shows here">
+
+         <input type="text" id="chat">
+         <button>send</button>
+         <br>
+         <button>leave</button>
+         <button>resque</button>
+         <button>hello</button>
+         <button>jaiho</button>
+        </div>
+        <div id="userpicture">
+            <img src="" alt="hello">
+        </div>
+     </div>
+    
+    
+   </div>
+    <div id="mid" >
+        <div id="chatshow" style="height: 80px;border: 2px solid grey;">
+            <div id="showchat"style="height: 55px;"></div>
+            <button id="seechat">see full chat</button>
+        </div> <table>
+        <!-- <caption>Alien football stars</caption> -->
+        <tr>
+            <td id="25">25</td>
+            <td id="26">26</td>
+            <td id="27">27</td>
+
+            
+        <tr>
+            <td id="24">24</td>
+            <td style="background-color: rgb(55, 155, 223);">
+                
+            </td>
+            <td id="28" style="background-color: rgb(55, 155, 223);">28</td>
+        </tr>
+        <tr>
+            <td id="23">
+            <!-- <div style="position: fixed;font-size: 70px; margin-top: -20px;" >*</div>  -->
+
+            *</td>
+            <td style="background-color: rgb(55, 155, 223);">
+
+            </td>
+            <td id="29">29</td>
+        </tr>
+        <tr>
+            <td id="22">22</td>
+            <td style="background-color: rgb(55, 155, 223);"></td>
+            <td id="30">30</td>
+        </tr>
+        <tr>
+            <td id="21">21</td>
+            <td style="background-color: rgb(55, 155, 223);"></td>
+            <td id="31">31</td>
+        </tr>
+        <tr style="height: 64px;">
+            <td id="20">20</td>
+            <td style="background-color: rgb(55, 155, 223);"></td>
+            <td id="32">32</td>
+        </tr>
+        
+    </table>
+    <table class="homeuser1" style="margin-top: 0px;">
+        <tr>
+            <td style=" height: 55px;transform: rotate(45deg)"></td>
+            <td style=" height: 55px;transform: rotate(45deg)"></td>
+        
+        </tr>
+
+        <tr   >
+            <td style="height: 56px;" ></td>
+            <td style=" height: 56px; border-style: 45degree;"></td>
+
+        </tr>
+        
+        
+    </table>
+   
+    <table>
+        <!-- <caption>Alien football stars</caption> -->
+        <tr>
+            <td id="6">06</td>
+            <td style="background-color: red;"></td>
+            <td id="46">46</td>
+
+            
+        <tr>
+            <td id="5">05</td>
+            <td style="background-color: red;"></td>
+            <td id="47">47</td>
+        </tr>
+        <tr>
+            <td id="4">04</td>
+            <td style="background-color: red;"></td>
+            <td id="48">48</td>
+        </tr>
+        <tr>
+            <td id="3">03</td>
+            <td style="background-color: red;"></td>
+            <td id="49">*
+            <!-- <div style="position: fixed;font-size: 70px; margin-top: -20px;" >*</div>  -->
+
+            </td>
+        </tr>
+        <tr>
+            <td id="2" style="background-color: red;">02
+                <!-- <div style=" width:100%;height:100%;background-color: red;"></div> -->
+            </td>
+            <td style="background-color: red;"></td>
+            <td id="50">50</td>
+        </tr>
+      <tr style="height: 67px;">
+          <td id="1">01</td>
+          <td id="52">52</td>
+          <td id="51">51</td>
+      </tr>
+    </table>
+    <div id="win" style="height: 80px;border: 2px solid grey;">
+        <strong>win position:</strong>
+        
+        <input type="text" id="num">
+        <button onclick="dan()" style="height: 35px;width: 35px;border: 2px solid black;" >fel</button>
+
+    </div>
+   
+   </div>
+   
+    <div id="right">
+        <div style="display: grid;grid-template-columns: 5fr 1fr; height: 80px;" class="user">
+            <div id="username">
+             <input type="text" id="name" placeholder="your name shows here">
+    
+             <input type="text" id="chat">
+             <button>send</button>
+             <br>
+             <button>leave</button>
+             <button>resque</button>
+             <button>hello</button>
+             <button>jaiho</button>
+            </div>
+            <div id="userpicture">
+                <img src="" alt="hello">
+            </div>
+         </div>
+         <table class="homeuser">
+        <tr>
+            <td id="b1" style="background-color: rgb(55, 155, 223);"></td>
+            <td id="b2" style="background-color: rgb(55, 155, 223);"></td>
+        
+        </tr>
+        <tr >
+            <td id="b3" style="background-color: rgb(55, 155, 223);"></td>
+            <td id="b4" style="background-color: rgb(55, 155, 223);"></td>
+
+        </tr>
+        
+    </table>
+     <table  style="margin: auto;">
+    <!-- <caption>Alien football stars</caption> -->
+    <tr>
+        <td id="33">33</td>
+        <td id="34">34</td>
+        <td id="35">35</td>
+        <td id="36">*
+            <!-- <div style="position: fixed;font-size: 70px; margin-top: -20px;" >*</div>  -->
+  </td
+        >
+        <td id="37">37</td>
+        <td id="38">38</td>
+    </tr>
+    <tr>
+        <td style="background-color: yellow;"></td>
+        <td style="background-color: yellow;"></td>
+        <td style="background-color: yellow;"></td>
+        <td style="background-color: yellow;"></td>
+        <td style="background-color: yellow;"></td>
+        <td id="39">39</td>
+    </tr>
+    
+    <tr>
+        <!-- <th scope="row"></th> -->
+        <td id="45">45</td>
+        <td id="44">44</td>
+        <td id="43">43</td>
+        <td id="42" >42</td>
+        <td  id="41"style="background-color: yellow;">41</td>
+        <td id="40">40</td>
+    </tr>
+    
+</table>
+<table id="p1" class="homeuser">
+    <tr>
+        <td  id="y1"   style="background-color: yellow;"></td>
+        <td  id="y2" style="background-color: yellow;"></td>
+    
+    </tr>
+    <tr >
+        <td id="y3"  style="background-color: yellow;"></td>
+        <td  id="y4" style="background-color: yellow;"></td>
+
+    </tr>
+    
+</table>
+<div style="display: grid;grid-template-columns: 5fr 1fr; height: 80px;" class="user">
+    <div id="username">
+     <input type="text" id="name" placeholder="your name shows here">
+
+     <input type="text" id="chat">
+     <button>send</button>
+     <br>
+     <button>leave</button>
+     <button>resque</button>
+     <button>hello</button>
+     <button onclick="dan()">jaiho</button>
+    </div>
+    <div id="userpicture">
+        <img src="" alt="hello">
+    </div>
+ </div>
+
+
+   </div>
+   </div> 
+    
+</body>
+</html>
+<script>
+    var noofuser=4;
+    if(noofuser==4){
+
+    }
+    
+</script>
